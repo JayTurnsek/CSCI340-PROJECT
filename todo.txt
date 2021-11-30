@@ -1,0 +1,4 @@
+- write individual class
+- start encoding behaviours
+- start encoding handing of behavior combinations
+- start generation procedural code
