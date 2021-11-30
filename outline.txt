@@ -1,0 +1,50 @@
+Alife population simulation, with different morals/teamwork tested:
+
+- population of n subjects
+- must collect food, or will die (each gen)
+- predators where food is, chance of death
+- if food collected, chance of reproduction
+- if no food collected, dies
+
+behaviors:
+
+BASELINE,
+
+SELFISHNESS
+vs.
+HEROISM,
+
+GREEN-BEARD ALTRUISM
+vs.
+TARGETED HATE
+
+to test:
+varying;
+    - population sizes
+    - predator kill rates
+    - reproduction rates
+crossover between types
+
+
+representation:
+individual class
+    - behavior typing, getBehavior()
+    - hasFood()
+population:
+    - list of individuals
+
+
+PSEUDOCODE FOR BASELINE:
+
+on each generation:
+    Until entire population forages:
+        two individuals try to go get food from a tree (two food):
+            if predator present (random):
+                50/50 chance on which individual is killed
+            if individual survives, granted food
+        IF ONE LEFT OVER, 50/50 on keep/kill
+    for every individual:
+        if food obtained:
+            reproduction occurs.
+            no fancy stuff just another one is added to population
+    
