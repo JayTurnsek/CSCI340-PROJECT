@@ -4,6 +4,8 @@ Title: main.py
 
 Main driver script for a-life simulation.
 '''
+# see updates
+
 from individual import Individual
 import random
 
@@ -21,11 +23,11 @@ def do_generation(population: list[Individual], predator_rate: float):
     next_gen = []
 
     # Process every 2 pair of individuals; since each tree has two food (situation handling)
-    for i,j in zip(shuffled[0::2], shuffled[1::2]):
+    for i, j in zip(shuffled[0::2], shuffled[1::2]):
 
         # Predator showed up!! ahhhh scary
         if random.random() <= predator_rate:
-            
+
             # 50/50 for baseline
             if random.random() < 0.5:
                 i.setFoodState(True)
@@ -34,23 +36,24 @@ def do_generation(population: list[Individual], predator_rate: float):
         else:
             i.setFoodState(True)
             j.setFoodState(False)
-            
+
     if len(shuffled) % 2 == 1:
         # ADD ODD LEN HANDLING PROCEDURE
         print('odd')
-        
+
     for i in shuffled:
         if i.hasFood():
             # reproduce, osmosis style. only if food was grabbed
             next_gen.append(i)
             next_gen.append(i)
 
+
 def do_simulation(gens: int, size: int, predator_rate: float):
 
     population = init_population(size)
     for gen in range(gens):
         do_generation(population, predator_rate)
-        
+
 
 if __name__ == "__main__":
     # parameters
