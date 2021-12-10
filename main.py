@@ -4,7 +4,7 @@ Title: main.py
 
 Main driver script for a-life simulation.
 '''
-# see updates
+# see updates plz
 
 from individual import Individual
 import random
