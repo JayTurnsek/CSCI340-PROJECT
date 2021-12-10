@@ -50,3 +50,10 @@ on each generation:
 
 
 
+<<<<<<< HEAD
+=======
+
+
+    
+yurrrr
+>>>>>>> 299d7d2d1ada2346c7cae28ab30d3706f24486cb
