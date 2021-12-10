@@ -44,12 +44,18 @@ def do_generation(population: list[Individual], predator_rate: float):
             # reproduce, osmosis style. only if food was grabbed
             next_gen.append(i)
             next_gen.append(i)
+    
+    print(len(next_gen))
+    return next_gen
 
 def do_simulation(gens: int, size: int, predator_rate: float):
 
     population = init_population(size)
     for gen in range(gens):
-        do_generation(population, predator_rate)
+        
+        next_gen = do_generation(population, predator_rate)
+        population = next_gen
+        print(len(population))
         
 
 if __name__ == "__main__":
