@@ -187,6 +187,7 @@ if __name__ == "__main__":
     plt.plot(range(N_GENS), pop2, label="Selfless Proportion", color="green")
     plt.fill_between(range(N_GENS), pop1, pop2, color="red")
     plt.fill_between(range(N_GENS), pop2, 0, color="green")
+    plt.ylim(0, 1.2)
     plt.legend(facecolor='white', framealpha=1)
     plt.title('Population Growth')
     plt.ylabel('Population')
