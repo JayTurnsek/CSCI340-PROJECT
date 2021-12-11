@@ -6,3 +6,19 @@ MODS:
     - food collection variance
     - visualizations
     - reproductive rates/death rates variance (statistical analysis)
+
+
+baseline vs baseline:
+
+50/50 on who gets the food, and who gets eaten by predator
+
+
+selfless vs selfish:
+selfish runs away scott free
+selfless yells with 0.5 chance of death
+
+selfless vs. selfless:
+both yell, 0.5 chance of death
+
+selfish vs. selfish
+both run way fine
