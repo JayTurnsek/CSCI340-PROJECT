@@ -14,11 +14,10 @@ baseline vs baseline:
 
 
 selfless vs selfish:
-selfish runs away scott free
-selfless yells with 0.5 chance of death
+selfless yells with 0.5 chance of death to warn other, other gets away free
 
 selfless vs. selfless:
-both yell, 0.5 chance of death
+One yells with 0.5 chance of death to warn other, other gets away free
 
 selfish vs. selfish
-both run way fine
+both run away, 0.25 chance of death each
